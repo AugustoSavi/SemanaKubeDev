@@ -1,0 +1,23 @@
+{
+  "name": "SemanaKubeDev",
+  "version": "1.0.0",
+  "description": "Uniformidade\r Não da para ter a menr ideia do que esta la dentro\r isolar processos\r padrão de execução\r Diminuição de conflitos de configurações",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AugustoSavi/SemanaKubeDev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AugustoSavi/SemanaKubeDev/issues"
+  },
+  "homepage": "https://github.com/AugustoSavi/SemanaKubeDev#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

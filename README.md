@@ -39,8 +39,39 @@ $ docker container run -it ubuntu /bin/bash
 $ docker container rm [CONTAINER ID]
 
 # NGINX é um famoso software de código aberto para servidores web lançado originalmente para navegação HTTP. Hoje, porém, ele também funciona como proxy reverso, balanceador de carga HTTP, e proxy de email para os protocolos IMAP, POP3, e SMTP.
-$ docker container run nginx
+$ docker container run -d nginx
 
+
+#acessa o container listado
+$ docker container exec -it  [CONTAINER ID] /bin/bash
+
+#Remover o docker que esta em execução
+$ docker container stop [CONTAINER ID]
+$ docker container rm [CONTAINER ID]
+
+#roda o container fazendo uma ligação da porta 8080 do computador com a 80 do container
+$ docker container run -d -p 8080:80 nginx
+
+# criando a imagem apartir do docker file local
+$ docker build -t saviaugusto/api-convercao:v1 . 
+
+#lista as imagens Criadas
+$ docker image ls
+
+# rodando a imagem criada
+$ docker container run -p 8080:8080 -d saviaugusto/api-convercao:v1
+
+# Autenticando para subir a imagem 
+$ docker login
+
+# Push da Imagem
+$ docker push saviaugusto/api-convercao:v1
+
+# Criando uma copia image latest
+$ docker tag saviaugusto/api-convercao:v1 saviaugusto/api-convercao:latest
+
+# Sobe a imagem latest
+$ docker push saviaugusto/api-convercao:latest
 
 ```
 ![1_5159032024949850425-1](https://user-images.githubusercontent.com/32443720/94684872-0a709b00-02ff-11eb-9781-94d5c9f6aeda.png)
