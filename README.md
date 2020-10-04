@@ -24,9 +24,10 @@ Pegar a base, para poder resolver problema
 [Docker Hub](https://hub.docker.com)
 
 
-## Comandos Usados
+<h1 style="text-align: center;">Comandos Usados Aula 1</h1>
 
 ```
+# Rodando o primeiro container
 $ docker container run hello-world
 
 # lista os container 
@@ -40,7 +41,6 @@ $ docker container rm [CONTAINER ID]
 
 # NGINX é um famoso software de código aberto para servidores web lançado originalmente para navegação HTTP. Hoje, porém, ele também funciona como proxy reverso, balanceador de carga HTTP, e proxy de email para os protocolos IMAP, POP3, e SMTP.
 $ docker container run -d nginx
-
 
 #acessa o container listado
 $ docker container exec -it  [CONTAINER ID] /bin/bash
@@ -74,6 +74,19 @@ $ docker tag saviaugusto/api-convercao:v1 saviaugusto/api-convercao:latest
 $ docker push saviaugusto/api-convercao:latest
 
 ```
+<h1 style="text-align: center;">Comandos Usados Aula 2</h1>
+
+```
+# Começei utilizando o kind para criar o cluster
+$ choco install kind
+
+# Criando o cluster
+$ kind create cluster
+
+# Listar nodes
+$ kubectl get nodes
+```
+
 ![1_5159032024949850425-1](https://user-images.githubusercontent.com/32443720/94684872-0a709b00-02ff-11eb-9781-94d5c9f6aeda.png)
 ![1_5159032024949850425-2](https://user-images.githubusercontent.com/32443720/94684874-0b093180-02ff-11eb-8101-02bfe4f175a9.png)
 ![1_5159032024949850425-3](https://user-images.githubusercontent.com/32443720/94684877-0ba1c800-02ff-11eb-8cac-90011737bf58.png)
